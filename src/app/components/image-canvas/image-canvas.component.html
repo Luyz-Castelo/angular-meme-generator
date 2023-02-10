@@ -1,0 +1,8 @@
+<div class="submit-button">
+  <button class="btn-upload">submit your meme</button>
+  <input type="file" name="meme-uploader" id="meme-uploader" accept="image/png, image/jpeg" (change)="onImageChange($event)">
+</div>
+
+<div class="canvas-div">
+  <canvas #canvas id="canvas" width={{width}} height={{height}}></canvas>
+</div>
