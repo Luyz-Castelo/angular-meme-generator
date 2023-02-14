@@ -23,11 +23,42 @@
 
 #canvas {
   border: 2px solid #ddd;
-  cursor: text;
+}
+
+#text-color-picker {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
 }
 
 .canvas-div {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  outline: 1px solid #000;
+  margin-bottom: 1rem;
+}
+
+.controls > * {
+  background-color: #ddd;
+  padding: .2rem .5rem;
+}
+
+.svg-anchor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
 }
